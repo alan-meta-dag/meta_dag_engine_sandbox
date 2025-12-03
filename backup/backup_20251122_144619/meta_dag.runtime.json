@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "name": "Meta-DAG Runtime Profile",
+    "id": "meta_dag.runtime",
+    "version": "0.1.0-stable",
+    "owner": "Alan",
+    "mode": ["B_runtime_shallow", "C_runtime_sandbox"],
+    "created_at": "2025-11-20"
+  },
+
+  "status": "runtime_loaded"
+}

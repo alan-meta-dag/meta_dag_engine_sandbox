@@ -1,0 +1,674 @@
+[
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.3935347
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.3937545
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.3945541
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.3948424
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.395626
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.395888
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.3966062
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.3969612
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.3978088
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.3980958
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.3989685
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.399261
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4002087
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4005046
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4015152
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4018316
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4028103
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4031358
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4039388
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4042554
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4052346
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.405596
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4067223
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4070976
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.408261
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4086564
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4107704
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4111571
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.412225
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4126318
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4137409
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4141586
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4154577
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.415881
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.416919
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4173362
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4184985
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4189334
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4202158
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.420662
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4218473
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4223187
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4235132
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4240015
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4257963
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.426273
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4274607
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4279466
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4291663
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4296556
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4308894
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4313998
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.432701
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.433218
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4346383
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4351902
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.436645
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.437184
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4386144
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.439289
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.44138
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4421027
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.443767
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.444376
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.445965
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4466107
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4481544
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.448776
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4503798
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.451081
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.453138
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4538012
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4570084
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4578016
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.459755
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.460448
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4620996
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4627469
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4644375
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.465106
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.466962
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4676824
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.469392
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4702656
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4721835
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4728897
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4746375
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.475328
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4772031
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4779234
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4797976
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4805532
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4823902
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4831185
+    },
+    {
+        "Policy": "Context Translation",
+        "Risk": "Semantic Pre-Filter",
+        "Action": "TUL translate V2",
+        "Source": "TUL",
+        "timestamp": 1764213422.4851182
+    },
+    {
+        "Policy": "L_Alpha Arbitration",
+        "Risk": "ACCEPTED",
+        "Action": "Append Node",
+        "Source": "L_ALPHA",
+        "timestamp": 1764213422.4860778
+    }
+]

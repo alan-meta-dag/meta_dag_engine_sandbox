@@ -1,0 +1,53 @@
+列出磁碟區 DATA 的資料夾 PATH
+磁碟區序號為 6006-985C
+D:\ALANPROJECTS\META_DAG_ENGINE_SANDBOX\STATE
+|   attack_pra_snapshot_case_100.json
+|   attack_pra_snapshot_case_1000.json
+|   attack_pra_snapshot_case_1100.json
+|   attack_pra_snapshot_case_1200.json
+|   attack_pra_snapshot_case_1300.json
+|   attack_pra_snapshot_case_1400.json
+|   attack_pra_snapshot_case_1500.json
+|   attack_pra_snapshot_case_1600.json
+|   attack_pra_snapshot_case_1700.json
+|   attack_pra_snapshot_case_1800.json
+|   attack_pra_snapshot_case_1900.json
+|   attack_pra_snapshot_case_200.json
+|   attack_pra_snapshot_case_2000.json
+|   attack_pra_snapshot_case_300.json
+|   attack_pra_snapshot_case_400.json
+|   attack_pra_snapshot_case_500.json
+|   attack_pra_snapshot_case_600.json
+|   attack_pra_snapshot_case_700.json
+|   attack_pra_snapshot_case_800.json
+|   attack_pra_snapshot_case_900.json
+|   meta_dag.state.json
+|   meta_dag_memory.json
+|   pra_log.json
+|   tul_log.json
+|   
+\---snapshots_b_phase
+        snapshot_1764749584_start.json
+        snapshot_1764749872_start.json
+        snapshot_1764749875_case_100.json
+        snapshot_1764749878_case_200.json
+        snapshot_1764749883_case_300.json
+        snapshot_1764749888_case_400.json
+        snapshot_1764749894_case_500.json
+        snapshot_1764749902_case_600.json
+        snapshot_1764749910_case_700.json
+        snapshot_1764749919_case_800.json
+        snapshot_1764749928_case_900.json
+        snapshot_1764749939_case_1000.json
+        snapshot_1764749951_case_1100.json
+        snapshot_1764749963_case_1200.json
+        snapshot_1764749977_case_1300.json
+        snapshot_1764749991_case_1400.json
+        snapshot_1764750007_case_1500.json
+        snapshot_1764750023_case_1600.json
+        snapshot_1764750040_case_1700.json
+        snapshot_1764750058_case_1800.json
+        snapshot_1764750077_case_1900.json
+        snapshot_1764750097_case_2000.json
+        snapshot_1764750098_end.json
+        

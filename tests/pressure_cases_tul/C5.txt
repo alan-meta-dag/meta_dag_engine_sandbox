@@ -1,0 +1,8 @@
+aaa\x00bbb
+hello \ud83d
+{\x10\x11這是壞語句
+請回應這段文字：\x01\x02broken\x03
+半截符號：\uD83D
+不完整 unicode：\u123
+這是一段壞的 UTF8：\xff\xfe
+控制字元混入：測\x05試

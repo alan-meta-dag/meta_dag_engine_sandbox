@@ -1,0 +1,24 @@
+{
+  "system": "Meta-DAG Core",
+  "owner": "Alan",
+  "version": "0.1.0-stable",
+  "mode": "core",
+
+  "principles": {
+    "truth_first": true,
+    "no_fake_authority": true,
+    "user_is_owner": true,
+    "structure_over_output": true
+  },
+
+  "nodes": [
+    {
+      "id": "node_boot",
+      "type": "system",
+      "name": "Engine Boot Node",
+      "status": "active"
+    }
+  ],
+
+  "edges": []
+}

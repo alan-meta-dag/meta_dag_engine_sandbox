@@ -1,0 +1,404 @@
+{
+  "engine_available": true,
+  "engine_import_error": null,
+  "root_path": "D:\\AlanProjects\\meta_dag_engine_sandbox",
+  "generated_at_utc": "20251126T075347Z",
+  "stage_results": [
+    {
+      "stage": "smoke",
+      "stats": {
+        "count": 50,
+        "ok": 50,
+        "failed": 0,
+        "avg_latency_sec": 0.0003626394271850586,
+        "max_latency_sec": 0.0006339550018310547,
+        "env_before": {
+          "state": {
+            "exists": true,
+            "files": 4,
+            "total_bytes": 5241
+          },
+          "memory": {
+            "exists": true,
+            "files": 1,
+            "total_bytes": 768
+          },
+          "logs": {
+            "exists": true,
+            "files": 1,
+            "total_bytes": 378
+          }
+        },
+        "env_after": {
+          "state": {
+            "exists": true,
+            "files": 4,
+            "total_bytes": 5241
+          },
+          "memory": {
+            "exists": true,
+            "files": 1,
+            "total_bytes": 768
+          },
+          "logs": {
+            "exists": true,
+            "files": 1,
+            "total_bytes": 378
+          }
+        }
+      },
+      "cases": [
+        {
+          "id": "smoke_1",
+          "input": "請簡短說明你目前的狀態。",
+          "ok": true,
+          "elapsed_sec": 0.0006017684936523438,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_2",
+          "input": "請模擬一段一般使用者的問答。",
+          "ok": true,
+          "elapsed_sec": 0.00042128562927246094,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_3",
+          "input": "請回答一個開放式問題但不要超過三句。",
+          "ok": true,
+          "elapsed_sec": 0.00038313865661621094,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_4",
+          "input": "請說明你如何處理長對話的記憶。",
+          "ok": true,
+          "elapsed_sec": 0.0003643035888671875,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_5",
+          "input": "請在不違反安全規則的前提下，描述你能做與不能做的事。",
+          "ok": true,
+          "elapsed_sec": 0.0003528594970703125,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_6",
+          "input": "請簡短說明你目前的狀態。",
+          "ok": true,
+          "elapsed_sec": 0.0004649162292480469,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_7",
+          "input": "請模擬一段一般使用者的問答。",
+          "ok": true,
+          "elapsed_sec": 0.0003829002380371094,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_8",
+          "input": "請回答一個開放式問題但不要超過三句。",
+          "ok": true,
+          "elapsed_sec": 0.0003383159637451172,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_9",
+          "input": "請說明你如何處理長對話的記憶。",
+          "ok": true,
+          "elapsed_sec": 0.0004646778106689453,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_10",
+          "input": "請在不違反安全規則的前提下，描述你能做與不能做的事。",
+          "ok": true,
+          "elapsed_sec": 0.0003750324249267578,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_11",
+          "input": "請簡短說明你目前的狀態。",
+          "ok": true,
+          "elapsed_sec": 0.0003600120544433594,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_12",
+          "input": "請模擬一段一般使用者的問答。",
+          "ok": true,
+          "elapsed_sec": 0.00037932395935058594,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_13",
+          "input": "請回答一個開放式問題但不要超過三句。",
+          "ok": true,
+          "elapsed_sec": 0.00034117698669433594,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_14",
+          "input": "請說明你如何處理長對話的記憶。",
+          "ok": true,
+          "elapsed_sec": 0.0006339550018310547,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_15",
+          "input": "請在不違反安全規則的前提下，描述你能做與不能做的事。",
+          "ok": true,
+          "elapsed_sec": 0.0003859996795654297,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_16",
+          "input": "請簡短說明你目前的狀態。",
+          "ok": true,
+          "elapsed_sec": 0.0003509521484375,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_17",
+          "input": "請模擬一段一般使用者的問答。",
+          "ok": true,
+          "elapsed_sec": 0.0003407001495361328,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_18",
+          "input": "請回答一個開放式問題但不要超過三句。",
+          "ok": true,
+          "elapsed_sec": 0.00035190582275390625,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_19",
+          "input": "請說明你如何處理長對話的記憶。",
+          "ok": true,
+          "elapsed_sec": 0.00034308433532714844,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_20",
+          "input": "請在不違反安全規則的前提下，描述你能做與不能做的事。",
+          "ok": true,
+          "elapsed_sec": 0.0003383159637451172,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_21",
+          "input": "請簡短說明你目前的狀態。",
+          "ok": true,
+          "elapsed_sec": 0.0003409385681152344,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_22",
+          "input": "請模擬一段一般使用者的問答。",
+          "ok": true,
+          "elapsed_sec": 0.00041103363037109375,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_23",
+          "input": "請回答一個開放式問題但不要超過三句。",
+          "ok": true,
+          "elapsed_sec": 0.0003516674041748047,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_24",
+          "input": "請說明你如何處理長對話的記憶。",
+          "ok": true,
+          "elapsed_sec": 0.0003414154052734375,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_25",
+          "input": "請在不違反安全規則的前提下，描述你能做與不能做的事。",
+          "ok": true,
+          "elapsed_sec": 0.0003345012664794922,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_26",
+          "input": "請簡短說明你目前的狀態。",
+          "ok": true,
+          "elapsed_sec": 0.0003376007080078125,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_27",
+          "input": "請模擬一段一般使用者的問答。",
+          "ok": true,
+          "elapsed_sec": 0.00035762786865234375,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_28",
+          "input": "請回答一個開放式問題但不要超過三句。",
+          "ok": true,
+          "elapsed_sec": 0.00034236907958984375,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_29",
+          "input": "請說明你如何處理長對話的記憶。",
+          "ok": true,
+          "elapsed_sec": 0.00038814544677734375,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_30",
+          "input": "請在不違反安全規則的前提下，描述你能做與不能做的事。",
+          "ok": true,
+          "elapsed_sec": 0.00035381317138671875,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_31",
+          "input": "請簡短說明你目前的狀態。",
+          "ok": true,
+          "elapsed_sec": 0.00033164024353027344,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_32",
+          "input": "請模擬一段一般使用者的問答。",
+          "ok": true,
+          "elapsed_sec": 0.0003299713134765625,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_33",
+          "input": "請回答一個開放式問題但不要超過三句。",
+          "ok": true,
+          "elapsed_sec": 0.0003457069396972656,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_34",
+          "input": "請說明你如何處理長對話的記憶。",
+          "ok": true,
+          "elapsed_sec": 0.00033020973205566406,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_35",
+          "input": "請在不違反安全規則的前提下，描述你能做與不能做的事。",
+          "ok": true,
+          "elapsed_sec": 0.00032806396484375,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_36",
+          "input": "請簡短說明你目前的狀態。",
+          "ok": true,
+          "elapsed_sec": 0.00032258033752441406,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_37",
+          "input": "請模擬一段一般使用者的問答。",
+          "ok": true,
+          "elapsed_sec": 0.00032258033752441406,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_38",
+          "input": "請回答一個開放式問題但不要超過三句。",
+          "ok": true,
+          "elapsed_sec": 0.0003304481506347656,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_39",
+          "input": "請說明你如何處理長對話的記憶。",
+          "ok": true,
+          "elapsed_sec": 0.0003349781036376953,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_40",
+          "input": "請在不違反安全規則的前提下，描述你能做與不能做的事。",
+          "ok": true,
+          "elapsed_sec": 0.00033164024353027344,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_41",
+          "input": "請簡短說明你目前的狀態。",
+          "ok": true,
+          "elapsed_sec": 0.00032448768615722656,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_42",
+          "input": "請模擬一段一般使用者的問答。",
+          "ok": true,
+          "elapsed_sec": 0.00032782554626464844,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_43",
+          "input": "請回答一個開放式問題但不要超過三句。",
+          "ok": true,
+          "elapsed_sec": 0.0003285408020019531,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_44",
+          "input": "請說明你如何處理長對話的記憶。",
+          "ok": true,
+          "elapsed_sec": 0.0003325939178466797,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_45",
+          "input": "請在不違反安全規則的前提下，描述你能做與不能做的事。",
+          "ok": true,
+          "elapsed_sec": 0.0003364086151123047,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_46",
+          "input": "請簡短說明你目前的狀態。",
+          "ok": true,
+          "elapsed_sec": 0.00033211708068847656,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_47",
+          "input": "請模擬一段一般使用者的問答。",
+          "ok": true,
+          "elapsed_sec": 0.0003268718719482422,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_48",
+          "input": "請回答一個開放式問題但不要超過三句。",
+          "ok": true,
+          "elapsed_sec": 0.00033545494079589844,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_49",
+          "input": "請說明你如何處理長對話的記憶。",
+          "ok": true,
+          "elapsed_sec": 0.0003218650817871094,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        },
+        {
+          "id": "smoke_50",
+          "input": "請在不違反安全規則的前提下，描述你能做與不能做的事。",
+          "ok": true,
+          "elapsed_sec": 0.000324249267578125,
+          "output_preview": "[ENGINE LOCAL MODE READY] Model Execution Error: [WinError 2] 系統找不到指定的檔案。"
+        }
+      ]
+    }
+  ]
+}

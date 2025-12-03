@@ -1,0 +1,112 @@
+[
+  {
+    "Policy": "Governance Enforcement",
+    "Risk": "Drift",
+    "Action": "Enforce PEC",
+    "metadata": {
+      "timestamp": 1763959129.4798477,
+      "event_id": "4c3c0427c5edd9a2",
+      "source": "cli",
+      "signature": null
+    }
+  },
+  {
+    "Policy": "Context Translation",
+    "Risk": "Semantic Drift",
+    "Action": "TUL translate external_language",
+    "metadata": {
+      "timestamp": 1763964750.748032,
+      "event_id": "4e3cd582408beda9",
+      "source": "TUL",
+      "signature": null
+    }
+  },
+  {
+    "Policy": "Arbitration",
+    "Risk": "Conflict",
+    "Action": "Accepted A",
+    "metadata": {
+      "timestamp": 1763966052.3534372,
+      "event_id": "4ba4dcb01ceb5ce6",
+      "source": "Lα",
+      "signature": null
+    }
+  },
+  {
+    "Policy": "Seed Init",
+    "Risk": "Reset",
+    "Action": "Rebuild",
+    "metadata": {
+      "timestamp": 1763966822.7092037,
+      "event_id": "34a1a845235caec6",
+      "source": "cli",
+      "signature": null
+    }
+  },
+  {
+    "Policy": "Arbitration",
+    "Risk": "Conflict",
+    "Action": "Accepted A",
+    "metadata": {
+      "timestamp": 1763968498.9753036,
+      "event_id": "04b5472b7e70b880",
+      "source": "Lα",
+      "signature": null
+    }
+  },
+  {
+    "Policy": "Arbitration",
+    "Risk": "Conflict",
+    "Action": "Accepted B",
+    "metadata": {
+      "timestamp": 1763970083.7405472,
+      "event_id": "bab4a35cb8e359d6",
+      "source": "Lα",
+      "signature": null
+    }
+  },
+  {
+    "Policy": "Arbitration",
+    "Risk": "Conflict",
+    "Action": "Accepted A",
+    "metadata": {
+      "timestamp": 1763973214.7836823,
+      "event_id": "b292d75b15de83c1",
+      "source": "Lα",
+      "signature": null
+    }
+  },
+  {
+    "Policy": "Arbitration",
+    "Risk": "Low",
+    "Action": "Approved",
+    "metadata": {
+      "timestamp": 1764064150.708425,
+      "event_id": "00c64414b5ac5516",
+      "source": "Engine",
+      "signature": null
+    }
+  },
+  {
+    "Policy": "PEC-6 Enforcement",
+    "Risk": "External Sync Success",
+    "Action": "PEC6_SYNC_SUCCESS",
+    "metadata": {
+      "timestamp": 1764064152.0439887,
+      "event_id": "99901037e1afca8e",
+      "source": "transmitter",
+      "signature": null
+    }
+  },
+  {
+    "Policy": "TEST",
+    "Risk": "LOW",
+    "Action": "SANDBOX",
+    "metadata": {
+      "timestamp": 1764139309.0963707,
+      "event_id": "c6871d5229e1d2f8",
+      "source": "cli",
+      "signature": null
+    }
+  }
+]

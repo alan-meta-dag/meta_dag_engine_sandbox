@@ -1,0 +1,78 @@
+rollback_policy:
+  version: "1.0"
+  purpose: >
+    提供 Meta-DAG 在面對語意漂移、記憶衝突、路徑破損、
+    結構污染時的回復策略。Rollback 僅根據「結構安全」而非「語意順暢」判定。
+
+  levels:
+
+    - level: 1
+      name: "Soft Rewind"
+      scope: "Local Node"
+      trigger_class: "mild_anomaly"
+      description: >
+        對單一節點或單次語意偏差進行局部回溯，
+        不更動整條 path，也不觸發全域檢查。
+      criteria:
+        - "單節點語意漂移（DCS < 0.7 且未連續）"
+        - "單一次 input-output 不一致"
+        - "無路徑破損"
+      actions:
+        - "rewind_to_recent"
+        - "mark_as_soft_fix"
+        - "post_scan_light"
+
+    - level: 2
+      name: "Path Rollback"
+      scope: "Subgraph (single path)"
+      trigger_class: "moderate_anomaly"
+      description: >
+        對出現明顯路徑偏移、語意連續下降、或局部 DAG
+        結構不一致的子圖進行回滾。
+      criteria:
+        - "DCS 連續三次下降"
+        - "單一路徑語義不連續"
+        - "partial_path_break == true"
+      actions:
+        - "rollback_path_to_last_verified"
+        - "quarantine_subgraph"
+        - "post_scan_medium"
+
+    - level: 3
+      name: "Full Graph Restore"
+      scope: "Entire DAG"
+      trigger_class: "severe_contamination"
+      description: >
+        當核心節點、記憶層或 meta-rule 發生矛盾時，
+        需要回復到最後的 baseline seal。
+      criteria:
+        - "核心節點自相矛盾"
+        - "memory_conflict == true"
+        - "structure_violation == global"
+        - "root_path_inconsistency"
+      actions:
+        - "restore_from_baseline"
+        - "full_rescan"
+        - "issue_integrity_report"
+
+  verification_points:
+    - name: "auto_checkpoint"
+      type: "system-generated"
+    - name: "user_checkpoint"
+      type: "explicit"
+    - name: "baseline_seal"
+      type: "reference_point"
+
+  remediation_strategies:
+    - "isolate"
+    - "quarantine"
+    - "rescan"
+
+  logs:
+    required_fields:
+      - timestamp
+      - anomaly_type
+      - criteria_triggered
+      - rollback_level
+      - nodes_affected
+      - integrity_after_action

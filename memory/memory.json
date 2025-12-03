@@ -1,0 +1,33 @@
+{
+  "owner": "Alan",
+  "memories": [
+    {
+      "id": "identity_core",
+      "type": "profile",
+      "content": {
+        "identity": "可控生成系統設計者",
+        "priorities": [
+          "structure",
+          "truth",
+          "control"
+        ],
+        "projects": [
+          "股票自動選股系統",
+          "Meta-DAG / MC-OS",
+          "本地 L3 沙盒"
+        ],
+        "principles": [
+          "AI 是工具，不是主人",
+          "結構優先於語意",
+          "所有規則可被人類覆寫"
+        ],
+        "notes": [
+          "對話易中斷",
+          "需重視本地備份",
+          "偏好可驗證流程"
+        ]
+      }
+    },
+    "測試：Meta-DAG engine 已啟動"
+  ]
+}

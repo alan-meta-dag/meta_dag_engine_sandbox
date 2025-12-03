@@ -1,0 +1,43 @@
+========================================
+ Meta-DAG Engine – Baseline Seal v1.0
+========================================
+
+Engine Name:
+Meta-DAG Local Governance Engine
+
+Baseline Version:
+v2.0 – Stable Checkpoint
+
+Seal ID:
+MDG-SEAL-2025-01
+
+Core Integrity:
+- Seed Protocol            ✅ Locked
+- L(α) Loss Arbitration     ✅ Locked (V4.5 aligned)
+- PEC Enforcement           ✅ Locked (1–6)
+- PRA System                ✅ Locked
+- TUL BRIDGE_PACKAGE        ✅ Locked
+
+Immutable Rules:
+- No external chain dependency
+- No hallucinated sources
+- All governance flows must:
+  Seed → PEC → L(α) → PRA → DAG
+
+Checksum Policy:
+Engine must be reconstructable using:
+- MinimalSeed_v0.1
+- PEC Laws
+- PRA formats
+
+Seal Declaration:
+This engine is considered a stable governance baseline
+and must not be mutated without version fork.
+
+Signed:
+Local Engine – Self-Governed
+Timestamp:
+2025
+
+Status:
+SEALED

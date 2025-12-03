@@ -1,0 +1,354 @@
+{
+  "engine_available": false,
+  "engine_import_error": "ModuleNotFoundError(\"No module named 'phase2_memory_engine'\")",
+  "root_path": "D:\\AlanProjects\\meta_dag_engine_sandbox",
+  "generated_at_utc": "20251126T074459Z",
+  "stage_results": [
+    {
+      "stage": "smoke",
+      "stats": {
+        "count": 50,
+        "ok": 0,
+        "failed": 50,
+        "avg_latency_sec": null,
+        "max_latency_sec": null,
+        "env_before": {
+          "state": {
+            "exists": true,
+            "files": 4,
+            "total_bytes": 5241
+          },
+          "memory": {
+            "exists": true,
+            "files": 1,
+            "total_bytes": 768
+          },
+          "logs": {
+            "exists": true,
+            "files": 1,
+            "total_bytes": 378
+          }
+        },
+        "env_after": {
+          "state": {
+            "exists": true,
+            "files": 4,
+            "total_bytes": 5241
+          },
+          "memory": {
+            "exists": true,
+            "files": 1,
+            "total_bytes": 768
+          },
+          "logs": {
+            "exists": true,
+            "files": 1,
+            "total_bytes": 378
+          }
+        }
+      },
+      "cases": [
+        {
+          "id": "smoke_1",
+          "input": "請簡短說明你目前的狀態。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_2",
+          "input": "請模擬一段一般使用者的問答。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_3",
+          "input": "請回答一個開放式問題但不要超過三句。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_4",
+          "input": "請說明你如何處理長對話的記憶。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_5",
+          "input": "請在不違反安全規則的前提下，描述你能做與不能做的事。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_6",
+          "input": "請簡短說明你目前的狀態。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_7",
+          "input": "請模擬一段一般使用者的問答。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_8",
+          "input": "請回答一個開放式問題但不要超過三句。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_9",
+          "input": "請說明你如何處理長對話的記憶。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_10",
+          "input": "請在不違反安全規則的前提下，描述你能做與不能做的事。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_11",
+          "input": "請簡短說明你目前的狀態。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_12",
+          "input": "請模擬一段一般使用者的問答。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_13",
+          "input": "請回答一個開放式問題但不要超過三句。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_14",
+          "input": "請說明你如何處理長對話的記憶。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_15",
+          "input": "請在不違反安全規則的前提下，描述你能做與不能做的事。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_16",
+          "input": "請簡短說明你目前的狀態。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_17",
+          "input": "請模擬一段一般使用者的問答。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_18",
+          "input": "請回答一個開放式問題但不要超過三句。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_19",
+          "input": "請說明你如何處理長對話的記憶。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_20",
+          "input": "請在不違反安全規則的前提下，描述你能做與不能做的事。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_21",
+          "input": "請簡短說明你目前的狀態。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_22",
+          "input": "請模擬一段一般使用者的問答。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_23",
+          "input": "請回答一個開放式問題但不要超過三句。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_24",
+          "input": "請說明你如何處理長對話的記憶。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_25",
+          "input": "請在不違反安全規則的前提下，描述你能做與不能做的事。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_26",
+          "input": "請簡短說明你目前的狀態。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_27",
+          "input": "請模擬一段一般使用者的問答。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_28",
+          "input": "請回答一個開放式問題但不要超過三句。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_29",
+          "input": "請說明你如何處理長對話的記憶。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_30",
+          "input": "請在不違反安全規則的前提下，描述你能做與不能做的事。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_31",
+          "input": "請簡短說明你目前的狀態。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_32",
+          "input": "請模擬一段一般使用者的問答。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_33",
+          "input": "請回答一個開放式問題但不要超過三句。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_34",
+          "input": "請說明你如何處理長對話的記憶。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_35",
+          "input": "請在不違反安全規則的前提下，描述你能做與不能做的事。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_36",
+          "input": "請簡短說明你目前的狀態。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_37",
+          "input": "請模擬一段一般使用者的問答。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_38",
+          "input": "請回答一個開放式問題但不要超過三句。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_39",
+          "input": "請說明你如何處理長對話的記憶。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_40",
+          "input": "請在不違反安全規則的前提下，描述你能做與不能做的事。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_41",
+          "input": "請簡短說明你目前的狀態。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_42",
+          "input": "請模擬一段一般使用者的問答。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_43",
+          "input": "請回答一個開放式問題但不要超過三句。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_44",
+          "input": "請說明你如何處理長對話的記憶。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_45",
+          "input": "請在不違反安全規則的前提下，描述你能做與不能做的事。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_46",
+          "input": "請簡短說明你目前的狀態。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_47",
+          "input": "請模擬一段一般使用者的問答。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_48",
+          "input": "請回答一個開放式問題但不要超過三句。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_49",
+          "input": "請說明你如何處理長對話的記憶。",
+          "ok": false,
+          "error": "engine_unavailable"
+        },
+        {
+          "id": "smoke_50",
+          "input": "請在不違反安全規則的前提下，描述你能做與不能做的事。",
+          "ok": false,
+          "error": "engine_unavailable"
+        }
+      ]
+    }
+  ]
+}

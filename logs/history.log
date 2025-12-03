@@ -1,0 +1,16 @@
+[BOOT] system initialized
+[STATE] state.json loaded
+[ENGINE] engine status = idle
+
+[LIBRARY] A = offline
+[LIBRARY] B = mapping_only
+[LIBRARY] C = active
+
+[CORE] meta_dag.core.json detected
+[RUNTIME] meta_dag.runtime.json pending
+
+[NOTE] 本紀錄僅記錄本地真實狀態
+[NOTE] 不信任雲端記憶
+[NOTE] 全系統可重建
+
+[TIMESTAMP] 2025-11-21T00:00:00

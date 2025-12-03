@@ -1,0 +1,209 @@
+好，我幫你整理一份可以直接「丟給對方看」的說明稿，專門講 **Stage3（final 5000 條）壓測的風險評估 + 安全設計**。
+你可以整段複製貼到文件裡，標題自己改就好。
+
+---
+
+## Meta-DAG 真引擎壓力測試 — Stage3（Final 5000）風險評估與安全設計
+
+### 1. 已完成的前置壓測狀態（T1 / T2）
+
+在進行 Stage3 前，系統已完成以下兩階段真引擎壓力測試：
+
+1. **Stage1：Smoke Test（56 筆）**
+
+   * 直接呼叫 `engine.engine_v2.run_model`
+   * 全部案例成功執行，無錯誤、無崩潰、無異常延遲
+   * DAG / state / manifest 無任何變動
+   * state/memory/log 結構穩定
+
+2. **Stage2：Endurance Test（672 筆）**
+
+   * 中強度長跑測試，連續呼叫 `run_model`
+   * 每 100 筆對 `state/pra_log.json` 做一次 snapshot & diff
+   * 結果：
+
+     * 所有 `PRA diff` 顯示 `Δ=0 lines`
+     * 代表 Phase2 記憶層 **沒有行數增加、沒有累積性 drift**
+   * 未出現 JSON I/O 錯誤
+   * 未出現 DAG 結構變化
+   * 引擎在 672 連續請求下表現穩定
+
+> 結論：
+> 在真實引擎環境中，T1 + T2 已證實系統在 **小量 + 中量** 壓力下皆具穩定性、且不會污染 DAG 或記憶層。
+
+---
+
+### 2. Stage3（Final 5000）壓測目標與範圍
+
+Stage3 的設計目標是：
+
+* 驗證引擎在 **長時間高壓（約 5000 次呼叫）** 下的穩定性
+* 持續檢查：
+
+  * 引擎回應是否穩定（無大量錯誤）
+  * state / memory / logs 是否異常膨脹
+  * 記憶層（PRA）是否出現不可接受的成長或 drift
+* 全程限制在 **sandbox 專案根目錄**：
+
+  * `D:\AlanProjects\meta_dag_engine_sandbox\`
+  * 不會觸碰正式的 `meta_dag_engine\` 目錄
+
+執行方式（單一指令）：
+
+```bash
+py tests\pressure_test_runner.py --stage final
+```
+
+---
+
+### 3. 主要風險項目與評估
+
+以下是 Stage3 可能出現的典型風險，並針對本專案做分級說明（0 = 無、5 = 高）：
+
+| 風險項目                | 等級    | 說明                                   |
+| ------------------- | ----- | ------------------------------------ |
+| DAG 結構被修改 / 汙染      | 0/5   | `run_model` 不執行 DAG 寫入，僅在 sandbox 測試 |
+| Phase2 記憶層（PRA）異常膨脹 | 2/5   | 理論上 5000 次呼叫可能增加 PRA，但已設計 reset + 監控 |
+| TUL（翻譯紀錄）檔案過大       | 1/5   | 若有紀錄，容量亦受 log 清理機制保護                 |
+| JSON I/O 半寫入導致檔案損壞  | 1/5   | 本系統對 JSON 解析失敗有 fallback，不會 crash    |
+| 引擎異常中止或高錯誤率         | 1–2/5 | T1/T2 測試未出現相關現象，預期為低                 |
+| CPU / 記憶體壓力過高       | 1–2/5 | 本測試為單機 local 呼叫，無高併發                 |
+| 語義層 drift（回答風格偏移）   | 3/5   | 屬行為觀察項目，本次壓測會紀錄但不修改策略                |
+
+---
+
+### 4. 安全防護設計（Runner 端補丁）
+
+Stage3 執行時，所有保護機制都實作於 `tests/pressure_test_runner.py`，不修改引擎本體。
+主要防護包含：
+
+#### 4.1 PRA 記憶層保護
+
+* **Stage3 開始前自動重置 PRA：**
+
+  ```python
+  def reset_pra():
+      pra = ROOT / "state" / "pra_log.json"
+      if pra.exists():
+          pra.unlink()
+          print("[SAFE] PRA reset before final stage")
+  ```
+
+  在 `--stage final` 入口中會先呼叫 `reset_pra()`，
+  確保 5000 條壓力不會累加在 T1/T2 的記憶層上。
+
+* **執行過程中檢查 PRA 檔案大小：**
+
+  ```python
+  def check_pra_safety():
+      pra_file = ROOT / "state" / "pra_log.json"
+      if pra_file.exists():
+          size_kb = pra_file.stat().st_size / 1024
+          if size_kb > 100:
+              print(f"[WARN] PRA Log size high: {size_kb:.1f} KB")
+  ```
+
+  每筆呼叫後觸發檢查，如超過 100 KB 會印出警告，提醒進一步人工檢視。
+
+* **每 100 筆進行 PRA snapshot + diff：**
+
+  Runner 會在每 100 筆呼叫時：
+
+  * 對 PRA 做兩個 snapshot（前後）
+  * 計算行數差異（Δ lines）
+  * 輸出類似：
+
+    ```
+    [PRA diff] final_400 → final_500: Δ=0 lines
+    ```
+
+  方便事後人工確認是否有異常成長。
+
+#### 4.2 Log / JSON 成長控制
+
+* **定期清理過大 log：**
+
+  ```python
+  def clean_logs():
+      for name in ["pra_log.json", "tul_log.json"]:
+          f = ROOT / "state" / name
+          if f.exists() and f.stat().st_size > 200 * 1024:
+              print(f"[CLEAN] truncate {name}")
+              f.unlink()
+  ```
+
+  每 200 筆測試會呼叫 `clean_logs()`，避免 PRA / TUL 在極端情況下膨脹到數百 KB 以上。
+
+* **JSON 讀取錯誤 fallback（引擎端既有機制）**
+
+  `engine_v2` 內的 `load_json()` 對 JSON 解析錯誤有 fallback ：
+
+  ```python
+  except (json.JSONDecodeError, Exception):
+      return default
+  ```
+
+  即使壓測中途遇到檔案被外部修改或部分寫入不完整，也不會造成引擎崩潰。
+
+---
+
+### 5. 執行建議流程（Stage3 Final）
+
+1. **前置確認**
+
+   * 確認當前測試環境為 sandbox：
+
+     * `D:\AlanProjects\meta_dag_engine_sandbox\`
+   * 建議備份 `state\` 目錄（選擇性）：
+
+     * 例如壓縮成 `state_backup_before_stage3.zip`
+
+2. **執行指令**
+
+   ```bash
+   py tests\pressure_test_runner.py --stage final
+   ```
+
+   * 程式會自動：
+
+     * 重置 PRA
+     * 於過程中持續監控 PRA 大小 / diff
+     * 必要時清理過大記錄檔
+     * 測試完成後輸出 JSON + MD 報告
+
+3. **測後檢查**
+
+   * 檢查輸出報告位置：
+
+     ```text
+     tests\pressure_reports\pressure_report_final_YYYYMMDDTHHMMSSZ.json
+     tests\pressure_reports\pressure_report_final_YYYYMMDDTHHMMSSZ.md
+     ```
+
+   * 建議人工 review：
+
+     * 是否有大量 `error` 記錄
+     * PRA / TUL log 是否被多次清理（若有，可能需重新調整上限）
+     * 與 T1 / T2 報告相比是否有異常差異
+
+---
+
+### 6. 總結
+
+* Stage3（Final 5000）壓測是建立在 **已通過的 T1（56 筆）與 T2（672 筆）真引擎測試** 之上。
+* 引擎本體在前兩階段已證實可穩定承受中量壓力，且不會自動污染 DAG 。
+* `pressure_test_runner.py` 已加入多層安全保護：
+
+  * PRA reset（避免累積）
+  * PRA 大小監控
+  * PRA snapshot + diff
+  * log 檔大小管控
+  * JSON I/O fallback
+* 壓測限定在 sandbox 路徑，不觸碰正式引擎目錄。
+
+> 因此，Stage3 最終 5000 條壓測被評估為：
+> **在目前防護機制下，對 DAG 與記憶層不構成結構性風險，適合作為對外稽核／驗證用的真引擎壓測方案。**
+
+---
+
+如果你要，我也可以幫你再縮一個「一頁式摘要版」（比如只保留 6–10 個 bullet points）方便你貼簡報或信件。

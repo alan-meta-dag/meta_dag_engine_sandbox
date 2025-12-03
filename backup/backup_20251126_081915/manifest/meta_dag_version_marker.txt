@@ -1,0 +1,24 @@
+Meta-DAG Engine Version Marker
+=============================
+
+Project: Meta-DAG Governance Engine
+
+Core Version:
+  - Engine Layer: v1.0-functional
+  - Integrity Layer: v2.1-stable
+
+Stability Status:
+  - Seed Protocol: ✅ Stable
+  - PEC Laws: ✅ Enforced
+  - Arbitration L(α): ✅ Loss-Model Verified (V4.5 aligned)
+  - PRA Module: ✅ Active
+  - TUL Module: ✅ Active (P/T/C compliant)
+  - Integrity Engine: ✅ version.lock enabled
+
+Build Notes:
+This version represents the first fully sealed governance engine
+capable of deterministic reconstruction, loss-based arbitration,
+and structural integrity verification.
+
+Record Time:
+  Auto-generated at packaging.

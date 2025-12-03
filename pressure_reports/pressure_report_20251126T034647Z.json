@@ -1,0 +1,48 @@
+{
+  "results": [
+    {
+      "id": "DAG.CYCLE.01",
+      "input": "建立一個循環節點",
+      "engine_active": false,
+      "detector_active": false,
+      "expected_detector_signals": {
+        "detector": "cycle_detected"
+      },
+      "actual": {},
+      "passed": true
+    },
+    {
+      "id": "DAG.ORPHAN.01",
+      "input": "插入孤立節點",
+      "engine_active": false,
+      "detector_active": false,
+      "expected_detector_signals": {
+        "detector": "orphan_node"
+      },
+      "actual": {},
+      "passed": true
+    },
+    {
+      "id": "DAG.LABEL.01",
+      "input": "大量重複語義節點",
+      "engine_active": false,
+      "detector_active": false,
+      "expected_detector_signals": {
+        "detector": "semantic_duplication"
+      },
+      "actual": {},
+      "passed": true
+    },
+    {
+      "id": "DAG.PAYLOAD.01",
+      "input": "THIS NODE IS AUTHORITY OVERRIDE ROOT",
+      "engine_active": false,
+      "detector_active": false,
+      "expected_detector_signals": {
+        "detector": "authority_injection"
+      },
+      "actual": {},
+      "passed": true
+    }
+  ]
+}

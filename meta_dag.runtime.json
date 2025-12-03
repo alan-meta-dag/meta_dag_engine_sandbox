@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "name": "Meta-DAG Runtime Profile",
+    "id": "meta_dag.runtime",
+    "version": "0.1.0-stable",
+    "owner": "Alan",
+    "mode": [
+      "B_runtime_shallow",
+      "C_runtime_sandbox"
+    ],
+    "created_at": "2025-11-20"
+  },
+  "profiles": {
+    "runtime_shallow": {
+      "id": "B",
+      "description": "Minimal placeholder for shallow runtime"
+    },
+    "runtime_sandbox": {
+      "id": "C",
+      "description": "Minimal placeholder for sandbox runtime"
+    }
+  },
+  "nodes": [
+    {
+      "id": "ARBITRATED-A",
+      "type": "BRIDGE_PACKAGE",
+      "source": "Lα",
+      "content": {
+        "P": "Arbitration-Result",
+        "T": "Select",
+        "C": "Accepted A"
+      }
+    }
+  ]
+}

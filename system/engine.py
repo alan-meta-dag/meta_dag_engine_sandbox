@@ -1,0 +1,5 @@
+print("=== ALAN LOCAL ENGINE ===")
+print("Status : BOOT OK")
+print("Mode   : OFFLINE / STABLE")
+print("==========================")
+input("Press ENTER to exit...")

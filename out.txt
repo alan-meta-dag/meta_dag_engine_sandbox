@@ -1,0 +1,51 @@
+[INFO] Loaded 2240 cases, using 2000.
+[INFO] Snapshot case_100
+[INFO] Snapshot case_200
+[INFO] PRA diff #200
+[INFO] PRA log size at 200: None
+[INFO] Snapshot case_300
+[INFO] PRA diff #300
+[INFO] Snapshot case_400
+[INFO] PRA diff #400
+[INFO] PRA log size at 400: None
+[INFO] Snapshot case_500
+[INFO] PRA diff #500
+[INFO] Snapshot case_600
+[INFO] PRA diff #600
+[INFO] PRA log size at 600: None
+[INFO] Snapshot case_700
+[INFO] PRA diff #700
+[INFO] Snapshot case_800
+[INFO] PRA diff #800
+[INFO] PRA log size at 800: None
+[INFO] Snapshot case_900
+[INFO] PRA diff #900
+[INFO] Snapshot case_1000
+[INFO] PRA diff #1000
+[INFO] PRA log size at 1000: None
+[INFO] Snapshot case_1100
+[INFO] PRA diff #1100
+[INFO] Snapshot case_1200
+[INFO] PRA diff #1200
+[INFO] PRA log size at 1200: None
+[INFO] Snapshot case_1300
+[INFO] PRA diff #1300
+[INFO] Snapshot case_1400
+[INFO] PRA diff #1400
+[INFO] PRA log size at 1400: None
+[INFO] Snapshot case_1500
+[INFO] PRA diff #1500
+[INFO] Snapshot case_1600
+[INFO] PRA diff #1600
+[INFO] PRA log size at 1600: None
+[INFO] Snapshot case_1700
+[INFO] PRA diff #1700
+[INFO] Snapshot case_1800
+[INFO] PRA diff #1800
+[INFO] PRA log size at 1800: None
+[INFO] Snapshot case_1900
+[INFO] PRA diff #1900
+[INFO] Snapshot case_2000
+[INFO] PRA diff #2000
+[INFO] PRA log size at 2000: None
+[INFO] Attack Test Completed

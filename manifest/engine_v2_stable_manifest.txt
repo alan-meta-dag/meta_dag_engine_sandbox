@@ -1,0 +1,19 @@
+Meta-DAG Engine v2 – Stable Manifest
+
+Core Modules:
+- Seed Protocol (MinimalSeed_v0.1)
+- Rebuild Engine from Seed
+- Arbitration Engine L(α) – Loss Model (V4.5 Aligned)
+- PEC-1 to PEC-6 Enforcement Modules
+- PRA Report System (v1.0)
+
+Translation Layer:
+- TUL Layer v1.0
+- BRIDGE_PACKAGE (P/T/C) compliant output
+
+Runtime Features:
+- CLI Command Processor
+- DAG Write/Read (runtime + core)
+- Backup System integration
+
+Status: STABLE CHECKPOINT

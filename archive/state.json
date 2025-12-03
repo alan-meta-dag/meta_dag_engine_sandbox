@@ -1,0 +1,29 @@
+{
+  "owner": "Alan",
+  "project_root": "D:/AlanProjects",
+
+  "system_mode": "local",
+  "engine_status": "idle",
+
+  "library_status": {
+    "A": "offline",
+    "B": "mapping_only",
+    "C": "active"
+  },
+
+  "meta_dag": {
+    "core_loaded": true,
+    "runtime_loaded": false
+  },
+
+  "last_known_state": {
+    "boot": "success",
+    "error": null
+  },
+
+  "notes": [
+    "以本地檔案為主，不信任雲端狀態",
+    "不假設任何資料已存在",
+    "所有結構可重建"
+  ]
+}
