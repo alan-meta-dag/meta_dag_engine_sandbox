@@ -2,3 +2,6 @@ state/
 tests/attack_reports/  
 engine/__pycache__/  
 .engine_lock 
+# Python cache
+**/__pycache__/
+*.pyc
