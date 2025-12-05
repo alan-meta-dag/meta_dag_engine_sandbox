@@ -10,3 +10,34 @@ tests/???patch.txt
 "tests/???patch.txt" 
 "tests/???patch.txt" 
 "tests/" 
+
+# ====================================
+# Meta-DAG Sandbox Additional Hygiene
+# ====================================
+
+# 1) UTF-8 檔名亂碼保護
+*\\3*
+
+# 2) 一次性 Patch / Junk test files
+tests/*patch*.txt
+tests/*.bak
+tests/~*
+tests/*.swp
+
+# 3) CI / IDE 噪音隔離
+.vscode/
+.idea/
+*.code-workspace
+
+# 4) Windows / Mac 垃圾檔案
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# 5) Drift raw & debug logs (僅保留正式 snapshot)
+drift_raw.log
+*.log
+
+# 6) State Temp / Auto Snapshots
+state/*.tmp
+state/drift_snapshots/*.tmp
