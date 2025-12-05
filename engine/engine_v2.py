@@ -6,6 +6,13 @@ import os
 from pathlib import Path
 from typing import Dict, Any, List, Tuple
 
+# 修正 governance module 匯入問題
+import sys
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+
+# C-3C Governance Hook Import
+from governance.drift_guard import enforce_governance
+
 # ============================================================
 # C-2 Self-Assertion Module (Meta-DAG Engine Governance v1.2)
 # Fixed-Point SHA Edition（避免 engine SHA 自我迴圈）
@@ -515,7 +522,7 @@ if __name__ == "__main__":
 
             # Phase 3: TUL 語義解析與模型執行
             else:
-                tul_struct = TUL_translate_v2(user_input)
+                tul_struct = TUL_translate_v2("USER", user_input)
 
                 print("\n=== TUL TRANSLATE RESULT ===")
                 print(json.dumps(tul_struct, indent=2, ensure_ascii=False))
@@ -525,6 +532,15 @@ if __name__ == "__main__":
                     output = run_model(user_input)
                     print("\n=== MODEL RESPONSE ===")
                     print(output)
+
+                    # ======== C-3C Governance Hook ========
+                    try:
+                        drift = enforce_governance()
+                        print(f"[Governance] drift-index = {drift:.3f}")
+                    except RuntimeError as e:
+                        print(f"!!! VETO TRIGGERED: {e}")
+                        auto_pra("Governance", "Semantic Drift", "VETO_ACTIVATED", "C3C")
+                        continue
 
         except KeyboardInterrupt:
             print("\n[Interrupted]")

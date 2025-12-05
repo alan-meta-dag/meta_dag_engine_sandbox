@@ -1,0 +1,6 @@
+{
+  "version": "C-3C.v1",
+  "drift_threshold": 0.50,
+  "rollback_threshold": 0.75,
+  "snapshot_on_violation": true
+}
