@@ -1,0 +1,9 @@
+{
+  "mode": "balanced",
+  "baseline_mean": 0.47,
+  "baseline_std": 0.18,
+  "threshold_snapshot": 0.69,
+  "threshold_veto": 0.92,
+  "confidence": "95%",
+  "last_calibrated": "C-4 Balanced Governance"
+}
