@@ -1,43 +1,32 @@
-state/  
-tests/attack_reports/  
-engine/__pycache__/  
-.engine_lock 
-# Python cache
-**/__pycache__/
+# ============================
+# Meta-DAG Integrity Allowlist
+# ============================
+# 排除治理輸出，避免 self-hash 循環
+version.lock
+manifest/engine_lock.json
+
+# 排除暫存、快取、Python 編譯輸出
+__pycache__/
 *.pyc
-drift_raw.log
-tests/???patch.txt
-"tests/???patch.txt" 
-"tests/???patch.txt" 
-"tests/" 
-
-# ====================================
-# Meta-DAG Sandbox Additional Hygiene
-# ====================================
-
-# 1) UTF-8 檔名亂碼保護
-*\\3*
-
-# 2) 一次性 Patch / Junk test files
-tests/*patch*.txt
-tests/*.bak
-tests/~*
-tests/*.swp
-
-# 3) CI / IDE 噪音隔離
-.vscode/
-.idea/
-*.code-workspace
-
-# 4) Windows / Mac 垃圾檔案
-Thumbs.db
-Desktop.ini
-.DS_Store
-
-# 5) Drift raw & debug logs (僅保留正式 snapshot)
-drift_raw.log
+*.tmp
 *.log
 
-# 6) State Temp / Auto Snapshots
-state/*.tmp
-state/drift_snapshots/*.tmp
+# 排除封存備份
+backup/
+_quarantine/
+
+# 排除測試與壓力測試結果（不屬治理主體）
+tests/
+pressure_reports/
+pressure_reports_tul/
+pressure_cases_tul/
+pressure_cases_tul_full/
+state/attack_pra_snapshot
+state/drift_snapshots/
+state/snapshots/
+
+# 排除大型審計結果與一次性檔案
+*.md.bak
+*.bak
+snaps.txt
+out.txt

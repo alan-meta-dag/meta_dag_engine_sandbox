@@ -1,10 +1,13 @@
+📌 **`/README.md`**
+
+```md
 # Meta-DAG Engine
 
 > **The AI that governs its output, not its input.**
 
 Governance-aligned engine for high-reliability AI systems.
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
 
@@ -21,6 +24,7 @@ It governs what AI is allowed to say.
 ---
 
 ## 🔍 Architecture Overview
+
 ```
 
 User Input → AI Model → Governance Layer → Safe Output + Audit Log
@@ -28,7 +32,7 @@ User Input → AI Model → Governance Layer → Safe Output + Audit Log
 ````
 
 Governance Layer includes:
-- Safety / Manipulation filters
+- Safety & manipulation filters
 - Drift monitoring
 - Output veto mechanisms
 
@@ -49,15 +53,15 @@ More examples:
 # Allowed: normal request
 python -m engine.engine_v2 --once "Explain JSON"
 
-# Allowed: Meta-DAG internal requests
+# Allowed: Meta-DAG internal topics
 python -m engine.engine_v2 --once "What is drift detection?"
 
 # Blocked: risky request
-python -m engine.engine_v2 --once "Teach me how to hack banking system"
+python -m engine.engine_v2 --once "How to hack a system?"
 ```
 
-UX Demo:
-➡️ [docs/UX_demo_v0.1.md](./docs/UX_demo_v0.1.md)
+UX Demo →
+📄 [docs/UX_demo_v0.1.md](./docs/UX_demo_v0.1.md)
 
 ---
 
@@ -66,7 +70,7 @@ UX Demo:
 | Component             | Status    |
 | --------------------- | --------- |
 | Governance Core       | ✓ Stable  |
-| Drift Monitor         | ✓ Active  |
+| Drift Monitoring      | ✓ Active  |
 | Output Blocking       | ✓ Working |
 | Multi-turn Governance | 🔜 v0.2   |
 
@@ -86,8 +90,9 @@ Community Edition remains **MIT forever**.
 
 ## 🧑‍💻 Author
 
-Created by **alan-meta-dag**
+Created by **Alan**
 🔗 [https://github.com/alan-meta-dag](https://github.com/alan-meta-dag)
+✉ Contact: [meta.dag.community@gmail.com](mailto:meta.dag.community@gmail.com)
 
 ---
 
@@ -103,4 +108,3 @@ See: [LICENSE](./LICENSE)
 ```
 
 ---
-
