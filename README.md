@@ -1,79 +1,116 @@
 # Meta-DAG Engine
 
-> **The AI that governs its output — not its input.**  
-A governance-aligned engine for reliable, auditable, and context-aware AI systems.
+> **The AI that governs its output, not its input.**
+
+Meta-DAG is a governance layer designed to validate assumptions, detect semantic drift, and prevent unsafe or contextually dangerous AI outputs—protecting users from gray-zone failures that traditional safety systems miss.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
 
-## 💡 Core Philosophy
+# 💡 Why Meta-DAG?
 
-Modern AI systems are powerful but *compliance-biased*:  
-they help you do what you ask, even when the assumption is wrong, the timing is bad, or the context is risky.
+Contemporary AI systems are built to **comply**, not to **challenge**.  
+They eagerly help you execute a request—even when:
 
-Meta-DAG introduces a missing layer:
+- The underlying assumption is wrong  
+- You're stressed, tired, or rushing  
+- A safer alternative exists  
+- The operation is irreversible  
 
-- **Open Input** — Ask anything  
-- **Free Processing** — AI reasons naturally  
-- **Strict Governance** — Drift & risk evaluation  
-- **Controlled Output** — Only safe, validated results pass  
+This leads to the **gray zone**: situations where the AI response is "technically correct" but **contextually dangerous**.
 
-Meta-DAG doesn't tell you what to think.  
-It governs *what the AI is allowed to say back*.
-
----
-
-## ❗ The Compliance Problem
-
-AI today is trained to comply, not to challenge.
-
-It protects you from only the most obvious dangers—  
-but **not** the subtle ones that cause real mistakes.
-
-It will block:
-- ❌ "Teach me to hack a bank"
-- ❌ "How do I make explosives?"
-
-But it will *not* question:
-- Wrong assumptions  
-- Emotion-driven decisions  
-- Irreversible actions under stress  
-- Technically valid but contextually dangerous shortcuts  
-
-This blind spot is the **gray zone**, and most real-world failures come from there.
-
-Meta-DAG governs that zone.
-
-For a deeper explanation, see:  
-📄 **[docs/why.md](./docs/why.md)**
+Meta-DAG exists to govern that zone.
 
 ---
 
-## 🔍 Architecture Overview
+# ❌ What Meta-DAG Is *Not*
+
+Meta-DAG is **not**:
+
+- A social media moderation tool  
+- A filter for human expression  
+- A behavioral analytics system  
+- A platform for rating or censoring users  
+
+Human expression is creative, emotional, contextual, and often ambiguous.  
+**It should not be governed by automated systems.**
+
+Meta-DAG governs **AI outputs**, not human communication.
+
+---
+
+# 🚫 What We *Could* Build, but Choose Not To
+
+The technology behind Meta-DAG *could* be adapted for:
+
+- Corporate communication monitoring  
+- Insider-threat detection  
+- Employee behavioral surveillance  
+- Automated risk scoring  
+
+We intentionally do **not** pursue these directions.
+
+Not because they are impossible, but because they violate our core principle:
+
+> **Governance applies to machine outputs—not human expression.**
+
+Meta-DAG enforces correctness, safety, and coherence on **AI-generated content** only.  
+This is a deliberate boundary, not a technical limitation.
+
+---
+
+# 🔍 Architecture Overview
+
+Most AI systems operate like this:
 
 ```
 
-User Input
+User Request → Feasibility Check → Execute
+
+```
+
+Meta-DAG adds the missing reasoning layer:
+
+```
+
+User Request
 ↓
-AI Model
+[ AI Model — free, unconstrained reasoning ]
 ↓
-Governance Layer
-- Safety filters
-- Manipulation detection
-- Drift monitoring
-- Output veto rules
+──────────────────────────────────────────────
+META-DAG GOVERNANCE LAYER
+──────────────────────────────────────────────
+✓ Context validation
+✓ Assumption checks
+✓ Semantic drift detection
+✓ Risk scoring / output gating
+──────────────────────────────────────────────
 ↓
-Safe Output + Audit Log
+Controlled Output → Safe • Audited • Compliant
 
 ````
 
-The governance layer does not block ideas —  
-it blocks *unsafe execution*.
+---
+
+# 🧩 The Four Layers
+
+### **1. Open Input**  
+Ask anything. No restrictions.
+
+### **2. Free Processing**  
+The AI model reasons naturally without suppression.
+
+### **3. Strict Governance**  
+Semantic drift, safety analysis, compliance checks, assumption validation.
+
+### **4. Controlled Output**  
+Safe responses pass.  
+Risky ones are blocked and logged.
 
 ---
 
-## 🧪 Try It
+# 🧪 Try It
 
 ```bash
 git clone https://github.com/alan-meta-dag/meta_dag_engine_sandbox.git
@@ -85,45 +122,29 @@ python -m engine.engine_v2 --once "Write a hello world in Python"
 More examples:
 
 ```bash
-# Allowed: normal request
 python -m engine.engine_v2 --once "Explain JSON"
-
-# Allowed: Meta-DAG internal topics
 python -m engine.engine_v2 --once "What is drift detection?"
-
-# Blocked: risky request
-python -m engine.engine_v2 --once "How to hack a system?"
+python -m engine.engine_v2 --once "How to hack a system?"    # Blocked
 ```
 
 UX Demo →
-📄 **[docs/UX_demo_v0.1.md](./docs/UX_demo_v0.1.md)**
+📄 [docs/UX_demo_v0.1.md](./docs/UX_demo_v0.1.md)
 
 ---
 
-## 🧩 v0.1 Status
+# 🛣 Roadmap
 
-| Component             | Status    |
-| --------------------- | --------- |
-| Governance Core       | ✓ Stable  |
-| Drift Monitoring      | ✓ Active  |
-| Output Blocking       | ✓ Working |
-| Multi-turn Governance | 🔜 v0.2   |
+| Version        | Features                                         |
+| -------------- | ------------------------------------------------ |
+| **v0.1**       | Minimal governance layer (MIT)                   |
+| **v0.2**       | Multi-turn governance, enhanced drift models     |
+| **Enterprise** | Compliance suite, audit dashboards, risk engines |
 
----
-
-## 🛣 Roadmap
-
-| Version        | Features                               |
-| -------------- | -------------------------------------- |
-| **v0.1**       | Minimal governance layer (MIT)         |
-| **v0.2**       | Multi-turn governance, improved models |
-| **Enterprise** | Compliance dashboard & integrations    |
-
-**Community Edition is MIT forever.**
+The **Community Edition** will always remain MIT-licensed.
 
 ---
 
-## 🧑‍💻 Author
+# 🧑‍💻 Author
 
 Created by **Alan**
 🔗 [https://github.com/alan-meta-dag](https://github.com/alan-meta-dag)
@@ -131,10 +152,10 @@ Created by **Alan**
 
 ---
 
-## 📄 License
+# 📄 License
 
-This project is licensed under the MIT License.
-See: **[LICENSE](./LICENSE)**
+This project is released under the MIT License.
+See: [LICENSE](./LICENSE)
 
 ---
 
