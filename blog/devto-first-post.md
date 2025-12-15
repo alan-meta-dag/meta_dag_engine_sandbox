@@ -67,7 +67,7 @@ But AI won't challenge you on:
 ## What I Actually Needed
 
 What I realized later was simple:
-
+ 
 The problem wasn't that the AI was malicious.
 The problem was that it was *too helpful*.
 
