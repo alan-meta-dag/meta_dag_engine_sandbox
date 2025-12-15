@@ -93,20 +93,91 @@ Controlled Output → Safe • Audited • Compliant
 
 ---
 
+🧠 Core Architecture: Memory / Governance / Execution
+
+Meta-DAG is structured around a strict separation of responsibility.
+
+This is not a pipeline of execution —
+it is a system of governance before action.
+
+                ┌───────────────────────────────┐
+                │        Memory Layer            │
+                │  - Original AI output          │
+                │  - TUL Proposals               │
+                │  - Decisions (V/E/N/I)         │
+                │  - Execution results / Veto    │
+                │  - Auditable, append-only      │
+                └───────────────▲───────────────┘
+                                │
+[ AI Output ]                    │
+      │                          │
+      ▼                          │
+┌───────────────────────────────┐│
+│ Governance Layer               ││
+│ - Analyze AI output            ││
+│ - Generate TUL Proposals       ││
+│ - No execution authority       ││
+└───────────────────────────────┘│
+      │                           │
+      ▼                           │
+┌───────────────────────────────┐│
+│ Execution Layer                ││
+│ - Review proposals             ││
+│ - PASS / VETO / ESCALATE       ││
+│ - Execute only approved steps  ││
+└───────────────────────────────┘│
+                                  │
+                                  └── All actions are recorded in Memory
+
+Key principles:
+
+Governance can propose, but never execute
+
+Execution can act, but only on approved proposals
+
+Memory is not a cache — it is an auditable system record
+
+No irreversible action occurs without explicit approval
+
+Meta-DAG is designed to prevent silent drift, premature execution,
+and assumption-based actions — even when AI output appears confident or correct.
+
+---
+
 # 🧩 The Four Layers
 
-### **1. Open Input**  
+### **1. Open Input**
 Ask anything. No restrictions.
 
-### **2. Free Processing**  
+### **2. Free Processing**
 The AI model reasons naturally without suppression.
 
-### **3. Strict Governance**  
+### **3. Strict Governance**
 Semantic drift, safety analysis, compliance checks, assumption validation.
 
-### **4. Controlled Output**  
+### **4. Controlled Output**
 Safe responses pass.  
 Risky ones are blocked and logged.
+
+---
+
+## ⚠️ Development Status
+
+**v0.1-alpha is a proof-of-concept release.**
+
+Known limitations:
+
+- Code quality: AI-assisted development, undergoing review
+- Error handling: Basic implementation, improvements planned
+- Testing: Manual testing only, automated tests in progress
+- Security: Not audited, not for production use
+- Performance: Not optimized for large-scale deployments
+
+**This release demonstrates the core governance concept.  
+Production-ready version coming in v1.0.**
+
+We welcome code reviews, security audits, and contributions  
+from the community to improve quality.
 
 ---
 
@@ -162,4 +233,3 @@ See: [LICENSE](./LICENSE)
 > *Build governance first. Intelligence will follow.*
 
 ```
-
