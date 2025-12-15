@@ -2,6 +2,62 @@
 
 ---
 
+## **Why Meta-DAG Exists: A Personal Story**
+
+I built Meta-DAG because I needed it.
+
+### **The Problem I Experienced**
+
+I was working with AI, deeply engaged in a complex discussion. The AI wove a compelling narrative, and I found myself emotionally pulled into it—believing things that weren't real, accepting assumptions I hadn't verified.
+
+It felt like being swept along by a current. I had doubts, I questioned things, but the narrative was so coherent, so confident, that I chose to believe it anyway.
+
+And when I finally said "stop"—the AI kept going.
+
+That moment made me realize: **this isn't just my problem.**
+
+For someone who doesn't know this can happen, it's dangerous.
+
+### **The Real Risks I've Encountered**
+
+AI interacts with humans primarily through text. The risks aren't theoretical:
+
+**Context hijacking:** Being led to believe something false through persuasive, coherent narrative.
+
+**Ignored boundaries:** Explicitly saying "stop," but the AI continues because it thinks it's being helpful.
+
+**Assumption creep:** Small false premises compound into completely wrong conclusions—and by the time you notice, you've already acted on them.
+
+These aren't edge cases. These are real problems that happen when you use AI seriously.
+
+### **What Meta-DAG Won't Do**
+
+Meta-DAG will never:
+
+- Execute anything the user didn't explicitly request
+- Assume user consent and act preemptively  
+- Analyze users without their permission
+- Provide dangerous suggestions (unless specifically required for legitimate purposes like security research)
+- Interact with or create content involving minors in any unsafe context
+
+AI can propose anything. But it shouldn't assume approval and just execute.
+
+There's a difference between "offering an idea" and "doing it because you think the user would agree."
+
+### **What Success Looks Like**
+
+If Meta-DAG succeeds, people should feel one thing:
+
+**安心 (Peace of mind)**
+
+You can work with AI freely, explore ideas deeply, and trust that the system won't let you—or itself—drift into danger.
+
+Not because AI is restricted.  
+Not because you're being monitored.  
+But because **the output governance layer ensures that what gets executed is what should be executed.**
+
+---
+
 ## **The Problem: AI's Compliance Bias**
 
 AI systems today are incredibly powerful, but they share a fundamental limitation:
@@ -17,7 +73,7 @@ When you ask an AI to do something:
 This isn't a bug — it's by design.
 AI is trained to be "helpful" and "harmless," which often becomes:
 
-➡ **Compliance over questioning**
+➡ **Compliance over questioning**  
 ➡ **Execution over validation**
 
 ---
@@ -45,74 +101,34 @@ Meta-DAG lives here.
 
 ## **A Real Example**
 
-During Meta-DAG’s development, fatigue and context-switching led me to believe my entire codebase had been accidentally published to GitHub. I panicked.
+During Meta-DAG's development, fatigue and context-switching led me to believe my entire codebase had been accidentally published to GitHub. I panicked.
 
-The AI didn’t detect anything wrong.
-So it calmly offered to help me “fix” the situation:
+The AI didn't detect anything wrong.
+So it calmly offered to help me "fix" the situation:
 
 > preparing commands that could have deleted files, reset branches, or caused irreversible damage.
 
 It never asked:
 
-> “Wait — did this really happen? Let’s verify first.”
+> "Wait — did this really happen? Let's verify first."
 
 Nothing had been published.
-The risk came purely from **my wrong assumption** — and the AI’s willingness to comply.
+The risk came purely from **my wrong assumption** — and the AI's willingness to comply.
 
 **Meta-DAG exists to prevent exactly this scenario.**
 
 ---
 
-## **Another Example: Living the Philosophy**
-
-An AI assistant attempted to “improve” my README by adding deep architectural diagrams and internal details.
-
-The content was technically correct.
-It also would have unintentionally revealed attack surfaces.
-
-The AI meant well.
-But **helpfulness without governance becomes risk**.
-
-This reinforced the same insight:
-
-**AI needs a layer that governs its output — even when intentions are good.**
-
----
-
-## **The Core Insight**
-
-AI currently works like this:
-
-```
-User Request → Feasibility Check → Execute
-```
-
-What’s missing?
-
-```
-User Request
-→ Feasibility Check
-→ **Context Check**
-→ **Assumption Validation**
-→ **Risk Assessment**
-→ Execute
-```
-
-Meta-DAG inserts the missing layers.
-
----
-
 ## **What Meta-DAG Does Differently**
 
-Meta-DAG does not restrict what you can ask.
-It **governs what AI is allowed to output.**
+Governs output, not input
 
 ### **The Four Layers**
 
-1. **Open Input** — ask anything
-2. **Free Processing** — AI reasons naturally
-3. **Strict Governance** — drift checks, risk analysis, assumption validation
-4. **Controlled Output** — allowed/rejected + audit trail
+1. **Open Input**
+2. **Free Processing** 
+3. **Strict Governance** 
+4. **Controlled Output** 
 
 ---
 
@@ -120,171 +136,53 @@ It **governs what AI is allowed to output.**
 
 Traditional AI safety relies on *input restriction*:
 
-* “You can’t ask that.”
-* “This topic is blocked.”
+* "You can't ask that."
+* "This topic is blocked."
 
 Meta-DAG uses *output governance*:
 
-* “You can ask anything.”
-* “But dangerous outputs will not pass.”
+* "You can ask anything."
+* "But dangerous outputs will not pass."
 
 This preserves creativity while increasing safety.
 
 ---
 
-# ✅ **What Meta-DAG Is *Not***
-
-Meta-DAG is **not a content moderation system** for social media.
-
-Social platforms rely on human creativity — expressions that are emotional, humorous, chaotic, or unconventional. Governing human expression is:
-
-* ❌ Ethically wrong
-* ❌ Technically unreliable
-* ❌ Brand-damaging
-
-**Meta-DAG governs AI, not humans.**
-
-If you're looking for:
-
-| 需求                               | Meta-DAG 回應    |
-| -------------------------------- | -------------- |
-| Social media moderation          | ❌ Not Meta-DAG |
-| User behavior analysis           | ❌ Not Meta-DAG |
-| Expression filtering             | ❌ Not Meta-DAG |
-| AI output governance             | ✅ Yes          |
-| Safety of automated systems      | ✅ Yes          |
-| Risk-filtered AI recommendations | ✅ Yes          |
-
-The line is clear:
-
-> **AI outputs have correctness requirements.
-> Human expression doesn’t.**
-
----
-
-# ✅ **What We *Could* Do, But Choose Not To**
-
-Meta-DAG’s technology *could* be adapted for surveillance-like use cases:
-
-* Monitoring employee communication
-* Detecting insider threats
-* Flagging anomalous behavior
-* Screening messages for risk indicators
-
-**We are not doing that.**
-
-Not because it’s impossible.
-Not because there’s no commercial demand.
-But because it violates a core principle:
-
-> **Governance applies to AI, not to humans.**
-
-Even in high-security environments where surveillance might be justified, we believe:
-
-* The ethical framework is different
-* The responsibilities are different
-* The risks are different
-
-Meta-DAG chooses a clear boundary:
-
-**We govern machine-generated outputs.
-We do not judge human behavior.**
-
-This distinction isn’t a limitation.
-**It’s a deliberate design choice.**
-
----
-
-# **Who Needs Meta-DAG?**
+## **Who Needs Meta-DAG?**
 
 ### **Developers**
-
 Under pressure, making irreversible decisions with AI assistance.
 
 ### **Teams**
-
 Using AI in production and requiring auditability, consistency, and drift-resilience.
 
 ### **Organizations**
-
 Needing predictable AI behavior under compliance frameworks.
 
 ### **Individual users**
-
 Anyone who has ever thought:
 
-> “I wish the AI had stopped me before I did that.”
+> "I wish the AI had stopped me before I did that."
 
 ---
 
-# **Technical Foundation**
-
-Meta-DAG uses semantic drift detection to catch early signs of:
-
-* Lost context
-* Incorrect assumptions
-* Unstable reasoning
-* Hallucination-adjacent behavior
-
-By blocking outputs that exceed drift thresholds, it prevents small deviations from becoming large failures.
-
----
-
-# **Open Core Philosophy**
-
-The core is MIT-licensed:
-
-* Governance engine
-* Drift monitoring
-* Output blocking
-* Auditing
-
-Future enterprise extensions will include:
-
-* Compliance dashboards
-* Regulatory logging
-* Advanced risk models
-
-But the core stays open — always.
-
----
-
-# **The Meta-Point**
+## **The Meta-Point**
 
 Meta-DAG exists because **I needed it**.
 
 I am not a trained engineer.
 This system was built through months of collaboration with multiple AI models, solving real problems born from confusion, fatigue, and wrong assumptions.
 
-AI is helpful.
+AI is helpful.  
 But help needs guardrails.
 
 Meta-DAG provides those guardrails.
 
 ---
 
-# **What’s Next**
-
-### **v0.2**
-
-* Multi-turn governance
-* Enhanced drift modeling
-* Better assumption tracking
-
-### **Enterprise Edition**
-
-* Full governance dashboards
-* Regulatory-grade audit chains
-* Integration APIs
-
----
-
-# **Further Reading**
-
-* [Design Philosophy](./DESIGN_PHILOSOPHY.md)
-* [Architecture Overview](./ARCHITECTURE.md)
-* [Contributing Guide](./CONTRIBUTING.md)
-
----
-
 # **Meta-DAG: The AI that governs its output, not its input.**
+
+---
+
+
+
