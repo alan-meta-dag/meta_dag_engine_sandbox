@@ -1,0 +1,9 @@
+# Core dependencies
+
+# Meta-DAG Engine v1.0
+# This project has no mandatory runtime dependencies.
+# Python >= 3.10 is recommended.
+
+# Optional: for future enhancements
+# flask>=3.0.0
+# python-dotenv>=1.0.0
