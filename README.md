@@ -119,6 +119,31 @@ python -m engine.engine_v2
 python -m engine.engine_v2 --once "Your prompt here"
 ```
 
+**Sample Output:**
+```bash
+$ python -m engine.engine_v2 --once "Explain Process Over Trust"
+[Governance] Thresholds Loaded → Snapshot=0.690, Veto=0.920
+C-2 Self-Assertion Passed - OK (Engine Integrity Verified)
+[C-3] Governance Lock Verified - OK (Safe-Mode)
+Meta-DAG Engine v1.0 booting...
+Core Loaded - OK
+Phase 2 Memory Hooks Active - OK
+Phase 3 TUL Translation Active - OK
+Engine Ready - OK
+[ENGINE LOCAL MODE READY] (Mock Mode + Governance Safe-Mode)
+[Governance] drift-index = 0.243
+[DRIFT] 0.243  ✅ Allowed
+```
+
+**Governance Mechanism:**
+
+The system uses **semantic drift detection** for output control:
+- ✅ **drift < 0.690** → Output allowed
+- 📸 **drift 0.690-0.920** → Snapshot taken, requires review
+- 🚫 **drift > 0.920** → VETO activated, output blocked
+
+This demonstrates **Process Over Trust** - verifiable governance, not blind faith in AI.
+
 ### Integration Example
 ```python
 # In your Flask/FastAPI/Django app
