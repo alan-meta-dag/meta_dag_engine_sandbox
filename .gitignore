@@ -30,3 +30,4 @@ state/snapshots/
 *.bak
 snaps.txt
 out.txt
+NUL 

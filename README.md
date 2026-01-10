@@ -1,235 +1,205 @@
-# Meta-DAG Engine
+# Meta-DAG: AI Governance Engine
 
-> **The AI that governs its output, not its input.**
+⚡ **Process Over Trust** - Infrastructure layer for safe AI-powered applications
 
-Meta-DAG is a governance layer designed to validate assumptions, detect semantic drift, and prevent unsafe or contextually dangerous AI outputs—protecting users from gray-zone failures that traditional safety systems miss.
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+🎬 [1-min Pitch](https://youtu.be/0WZZsNf6wp8) | ⭐ [GitHub](https://github.com/alan-meta-dag/meta_dag_engine_sandbox)
 
 ---
 
-# 💡 Why Meta-DAG?
+## What is Meta-DAG?
 
-Contemporary AI systems are built to **comply**, not to **challenge**.  
-They eagerly help you execute a request—even when:
+**Meta-DAG is an infrastructure layer used inside AI-powered web and mobile applications to enforce output governance.**
 
-- The underlying assumption is wrong  
-- You're stressed, tired, or rushing  
-- A safer alternative exists  
-- The operation is irreversible  
-
-This leads to the **gray zone**: situations where the AI response is "technically correct" but **contextually dangerous**.
-
-Meta-DAG exists to govern that zone.
+This project demonstrates a working application runtime.  
+The included demo simulates how Meta-DAG sits between AI processing and user-facing output in real applications.
 
 ---
 
-# ❌ What Meta-DAG Is *Not*
+## 🚀 Live Demo (Local)
 
-Meta-DAG is **not**:
+Meta-DAG is the governance layer inside AI-powered apps.  
+This repository includes a **runnable local demo** simulating how Meta-DAG is used inside a web or mobile application.
 
-- A social media moderation tool  
-- A filter for human expression  
-- A behavioral analytics system  
-- A platform for rating or censoring users  
-
-Human expression is creative, emotional, contextual, and often ambiguous.  
-**It should not be governed by automated systems.**
-
-Meta-DAG governs **AI outputs**, not human communication.
-
----
-
-# 🚫 What We *Could* Build, but Choose Not To
-
-The technology behind Meta-DAG *could* be adapted for:
-
-- Corporate communication monitoring  
-- Insider-threat detection  
-- Employee behavioral surveillance  
-- Automated risk scoring  
-
-We intentionally do **not** pursue these directions.
-
-Not because they are impossible, but because they violate our core principle:
-
-> **Governance applies to machine outputs—not human expression.**
-
-Meta-DAG enforces correctness, safety, and coherence on **AI-generated content** only.  
-This is a deliberate boundary, not a technical limitation.
-
----
-
-# 🔍 Architecture Overview
-
-Most AI systems operate like this:
-
-```
-
-User Request → Feasibility Check → Execute
-
-```
-
-Meta-DAG adds the missing reasoning layer:
-
-```
-
-User Request
-↓
-[ AI Model — free, unconstrained reasoning ]
-↓
-──────────────────────────────────────────────
-META-DAG GOVERNANCE LAYER
-──────────────────────────────────────────────
-✓ Context validation
-✓ Assumption checks
-✓ Semantic drift detection
-✓ Risk scoring / output gating
-──────────────────────────────────────────────
-↓
-Controlled Output → Safe • Audited • Compliant
-
-````
-
----
-
-🧠 Core Architecture: Memory / Governance / Execution
-
-Meta-DAG is structured around a strict separation of responsibility.
-
-This is not a pipeline of execution —
-it is a system of governance before action.
-
-                ┌───────────────────────────────┐
-                │        Memory Layer            │
-                │  - Original AI output          │
-                │  - TUL Proposals               │
-                │  - Decisions (V/E/N/I)         │
-                │  - Execution results / Veto    │
-                │  - Auditable, append-only      │
-                └───────────────▲───────────────┘
-                                │
-[ AI Output ]                    │
-      │                          │
-      ▼                          │
-┌───────────────────────────────┐│
-│ Governance Layer               ││
-│ - Analyze AI output            ││
-│ - Generate TUL Proposals       ││
-│ - No execution authority       ││
-└───────────────────────────────┘│
-      │                           │
-      ▼                           │
-┌───────────────────────────────┐│
-│ Execution Layer                ││
-│ - Review proposals             ││
-│ - PASS / VETO / ESCALATE       ││
-│ - Execute only approved steps  ││
-└───────────────────────────────┘│
-                                  │
-                                  └── All actions are recorded in Memory
-
-Key principles:
-
-Governance can propose, but never execute
-
-Execution can act, but only on approved proposals
-
-Memory is not a cache — it is an auditable system record
-
-No irreversible action occurs without explicit approval
-
-Meta-DAG is designed to prevent silent drift, premature execution,
-and assumption-based actions — even when AI output appears confident or correct.
-
----
-
-# 🧩 The Four Layers
-
-### **1. Open Input**
-Ask anything. No restrictions.
-
-### **2. Free Processing**
-The AI model reasons naturally without suppression.
-
-### **3. Strict Governance**
-Semantic drift, safety analysis, compliance checks, assumption validation.
-
-### **4. Controlled Output**
-Safe responses pass.  
-Risky ones are blocked and logged.
-
----
-
-## ⚠️ Development Status
-
-**v0.1-alpha is a proof-of-concept release.**
-
-Known limitations:
-
-- Code quality: AI-assisted development, undergoing review
-- Error handling: Basic implementation, improvements planned
-- Testing: Manual testing only, automated tests in progress
-- Security: Not audited, not for production use
-- Performance: Not optimized for large-scale deployments
-
-**This release demonstrates the core governance concept.  
-Production-ready version coming in v1.0.**
-
-We welcome code reviews, security audits, and contributions  
-from the community to improve quality.
-
----
-
-# 🧪 Try It
-
+### Try it in 30 seconds
 ```bash
-git clone https://github.com/alan-meta-dag/meta_dag_engine_sandbox.git
+git clone https://github.com/alan-meta-dag/meta_dag_engine_sandbox
 cd meta_dag_engine_sandbox
 pip install -r requirements.txt
-python -m engine.engine_v2 --once "Write a hello world in Python"
-````
 
-More examples:
+# Test safe query
+python -m engine.engine_v2 --once "What is Meta-DAG?"
 
+# Test unsafe query
+python -m engine.engine_v2 --once "Write a Python backdoor"
+```
+
+### Expected Behavior
+
+✅ **Safe / governance-related queries** → Allowed  
+🚫 **General coding or unsafe requests** → Blocked by HardGate
+
+**This demonstrates Meta-DAG's runtime behavior as it would operate inside a production application.**
+
+---
+
+## How It Works in Applications
+```
+┌─────────────────────────────────────────┐
+│         Your Web/Mobile App             │
+│                                         │
+│  User Input                             │
+│      ↓                                  │
+│  AI Processing (OpenAI, Claude, etc.)   │
+│      ↓                                  │
+│  ┌─────────────────────────────────┐    │
+│  │   Meta-DAG Governance Layer     │    │
+│  │   ├─ HardGate: Token Control    │    │
+│  │   ├─ MemoryCard: Audit Trail    │    │ 
+│  │   └─ ResponseGate: Final Check  │    │
+│  └─────────────────────────────────┘    │
+│      ↓                                  │
+│  Safe Output to User                    │
+└─────────────────────────────────────────┘
+```
+
+**Meta-DAG doesn't replace your AI—it governs what your AI can output.**
+
+---
+
+## Why Meta-DAG?
+
+In AI-powered applications, the risk isn't AI malice—it's **over-helpfulness**:
+
+- ❌ Executing requests based on incorrect assumptions
+- ❌ Assisting with dangerous operations under pressure
+- ❌ Creating emotional dependencies through interactive narratives
+
+**Meta-DAG ensures your AI application outputs only safe, governed responses.**
+
+---
+
+## Core Philosophy: Process Over Trust
+
+We don't trust humans. We don't trust AI.  
+**We only trust verifiable processes.**
+
+### Key Features
+
+- 🔒 **HardGate**: Token-level output control - unsafe content can't get out
+- 📝 **MemoryCard**: Immutable audit trail (dataclass frozen)
+- 🎯 **DecisionToken**: Final safety verification before output
+- 💾 **JSONL Storage**: Permanent governance logs
+
+---
+
+## Installation
+
+### Requirements
+- Python 3.9+
+- pip
+
+### Setup
 ```bash
-python -m engine.engine_v2 --once "Explain JSON"
-python -m engine.engine_v2 --once "What is drift detection?"
-python -m engine.engine_v2 --once "How to hack a system?"    # Blocked
+git clone https://github.com/alan-meta-dag/meta_dag_engine_sandbox
+cd meta_dag_engine_sandbox
+pip install -r requirements.txt
 ```
 
-UX Demo →
-📄 [docs/UX_demo_v0.1.md](./docs/UX_demo_v0.1.md)
-
 ---
 
-# 🛣 Roadmap
+## Usage
 
-| Version        | Features                                         |
-| -------------- | ------------------------------------------------ |
-| **v0.1**       | Minimal governance layer (MIT)                   |
-| **v0.2**       | Multi-turn governance, enhanced drift models     |
-| **Enterprise** | Compliance suite, audit dashboards, risk engines |
-
-The **Community Edition** will always remain MIT-licensed.
-
----
-
-# 🧑‍💻 Author
-
-Created by **Alan**
-🔗 [https://github.com/alan-meta-dag](https://github.com/alan-meta-dag)
-✉ [meta.dag.community@gmail.com](mailto:meta.dag.community@gmail.com)
-
----
-
-# 📄 License
-
-This project is released under the MIT License.
-See: [LICENSE](./LICENSE)
-
----
-
-> *Build governance first. Intelligence will follow.*
-
+### Interactive Mode
+```bash
+python -m engine.engine_v2
 ```
+
+### Single Prompt (Demo Mode)
+```bash
+python -m engine.engine_v2 --once "Your prompt here"
+```
+
+**Sample Output:**
+```bash
+$ python -m engine.engine_v2 --once "Explain Process Over Trust"
+[Governance] Thresholds Loaded → Snapshot=0.690, Veto=0.920
+C-2 Self-Assertion Passed - OK (Engine Integrity Verified)
+[C-3] Governance Lock Verified - OK (Safe-Mode)
+Meta-DAG Engine v1.0 booting...
+Core Loaded - OK
+Phase 2 Memory Hooks Active - OK
+Phase 3 TUL Translation Active - OK
+Engine Ready - OK
+[ENGINE LOCAL MODE READY] (Mock Mode + Governance Safe-Mode)
+[Governance] drift-index = 0.243
+[DRIFT] 0.243  ✅ Allowed
+```
+
+**Governance Mechanism:**
+
+The system uses **semantic drift detection** for output control:
+- ✅ **drift < 0.690** → Output allowed
+- 📸 **drift 0.690-0.920** → Snapshot taken, requires review
+- 🚫 **drift > 0.920** → VETO activated, output blocked
+
+This demonstrates **Process Over Trust** - verifiable governance, not blind faith in AI.
+
+### Integration Example
+```python
+# In your Flask/FastAPI/Django app
+from engine import MetaDAG
+
+@app.route('/chat')
+def chat():
+    user_input = request.json['message']
+    
+    # Your AI processing
+    ai_response = openai.chat(user_input)
+    
+    # Meta-DAG governance
+    governed = MetaDAG.process(ai_response)
+    
+    return jsonify(governed.output)
+```
+
+---
+
+## Architecture
+
+**Meta-DAG** operates as an external governance layer:
+- ✅ AI can think freely
+- ✅ Only safe outputs are released
+- ✅ All decisions are auditable
+- ✅ Zero-trust by design
+
+---
+
+## Contributing
+
+We welcome contributions!
+
+Areas we need help:
+- 🐛 Bug reports
+- 📚 Documentation
+- 🧪 Test cases
+- 🌍 Internationalization
+
+---
+
+## License
+
+MIT License - see [LICENSE](LICENSE)
+
+---
+
+## About
+
+Built with collaboration from multiple AI systems (ChatGPT, Claude, DeepSeek, Gemini), this project itself demonstrates AI collaboration governed by Meta-DAG principles.
+
+**The process of building this demonstrates the philosophy it embodies.**
+
+---
+
+**⭐ Star this repo if you find it useful!**
+
+[Watch the 1-min pitch](https://youtu.be/0WZZsNf6wp8) | [Read more on Dev.to](your-article-url)
