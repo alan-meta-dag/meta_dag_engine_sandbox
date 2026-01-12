@@ -31,3 +31,16 @@ state/snapshots/
 snaps.txt
 out.txt
 NUL 
+
+# 虛擬環境
+venv/
+env/
+.env
+
+# IDE 設定
+.vscode/
+.idea/
+
+# OS 垃圾
+.DS_Store
+Thumbs.db
