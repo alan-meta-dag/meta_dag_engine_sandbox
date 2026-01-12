@@ -77,6 +77,15 @@ Meta-DAG exists to answer **one question only:**
 
 ---
 
+📄 **HardGate Protocol Whitepaper**
+
+This repository is governed by a strict architectural constraint model.
+The full enforcement rationale and protocol design are documented here:
+
+→ docs/architecture/hardgate_protocol.md
+
+---
+
 ## What is Meta-DAG?
 
 **Meta-DAG is an infrastructure layer used inside AI-powered 
