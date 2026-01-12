@@ -77,7 +77,7 @@ Meta-DAG exists to answer **one question only:**
 
 ---
 
-📄 **HardGate Protocol Whitepaper**
+##📄 **HardGate Protocol Whitepaper**
 
 This repository is governed by a strict architectural constraint model.
 The full enforcement rationale and protocol design are documented here:
